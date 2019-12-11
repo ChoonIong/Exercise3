@@ -17,13 +17,16 @@ class MainActivity : AppCompatActivity() {
         buttonReset.setOnClickListener {
             spinnerAge.setSelection(0)
             radioGroup.clearCheck()
+            checkSmokeYes.isChecked = false
+
+
 
         }
 
     }
 
     fun Calculate(): Double{
-        
+
 
         return when(spinnerAge.selectedItemPosition){
             0 -> 60.00
